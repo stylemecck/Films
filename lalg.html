@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Guy 2021</title>
+  <title>Hallo 2022</title>
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
+    <link href="sea/index.css" rel="stylesheet" />
+    <link href="forest/index.css" rel="stylesheet" />
+    <link href="fantasy/index.css" rel="stylesheet" />
+    <link href="city/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <style>
+      .player {
+        margin: 5em auto;
+        width: 500px;
+      }
+    </style>
+  </head>
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <body>
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-
-<body id="#top">
-
-  <!-- 
+     <!-- 
     - #HEADER
   -->
 
@@ -143,121 +138,27 @@
 
     </div>
   </header>
+<!-- video player-->
+<br>
+    <div class="player">
+      <h2>HALO 2022 </h2> <br>
+      <video
+        id="city-video"
+        class="video-js vjs-theme-city"
+        controls
+        preload="auto"
+        poster="./assets/images/movie-1.png"
+        data-setup='{ "fluid": true }'
+      >
+        <source
+          src="./video/lalg.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
 
 
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #MOVIE DETAIL
-      -->
-
-      <section class="movie-detail">
-        <div class="container">
-
-          <figure class="movie-detail-banner">
-
-            <img src="./assets/images/movie-4.png" alt="Free guy movie poster">
-
-            <button class="play-btn" onclick="window.location.href = './video/';">
-            
-              <ion-icon name="play-circle-outline"></ion-icon>
-          
-            </button>
-
-          </figure>
-
-          <div class="movie-detail-content">
-
-            <p class="detail-subtitle">New Episodes</p>
-
-            <h1 class="h1 detail-title">
-              Free <strong>Guy</strong>
-            </h1>
-
-            <div class="meta-wrapper">
-
-              <div class="badge-wrapper">
-                <div class="badge badge-fill">PG 13</div>
-
-                <div class="badge badge-outline">HD</div>
-              </div>
-
-              <div class="ganre-wrapper">
-                <a href="#">Comedy,</a>
-
-                <a href="#">Action,</a>
-
-                <a href="#">Adventure,</a>
-
-                <a href="#">Science Fiction</a>
-              </div>
-
-              <div class="date-time">
-
-                <div>
-                  <ion-icon name="calendar-outline"></ion-icon>
-
-                  <time datetime="2021">2021</time>
-                </div>
-
-                <div>
-                  <ion-icon name="time-outline"></ion-icon>
-
-                  <time datetime="PT115M">115 min</time>
-                </div>
-
-              </div>
-
-            </div>
-
-            <p class="storyline">
-              A bank teller called Guy realizes he is a background character in an open world video game called Free
-              City that will
-              soon go offline.
-            </p>
-
-            <div class="details-actions">
-
-              <button class="share">
-                <ion-icon name="share-social"></ion-icon>
-
-                <span>Share</span>
-              </button>
-
-              <div class="title-wrapper">
-                <p class="title">Prime Video</p>
-
-                <p class="text">Streaming Channels</p>
-              </div>
-
-              <button  class="btn btn-primary" onclick="window.location.href = './video/HD-0.mp4';">
-                <ion-icon name="play"></ion-icon>
-               
-                <span>Watch Now</span>
-              </button>
-
-            </div>
-
-            <a href="./video/HD-0.mp4" download class="download-btn">
-              <span>Download</span>
-
-              <ion-icon name="download-outline"></ion-icon>
-            </a>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+     <!-- 
         - #TV SERIES
       -->
 
@@ -273,9 +174,9 @@
             <li>
               <div class="movie-card">
 
-                <a href="./moon-knight.html">
+                <a href="./movie-details.html">
                   <figure class="card-banner">
-                    <img src="./assets/images/series-1.png" alt="Moon Knight movie poster">
+                    <img src="./assets/images/movie-4.png" alt="Moon Knight movie poster">
                   </figure>
                 </a>
 
@@ -567,4 +468,10 @@
 
 </body>
 
+</html>
+        
+        
+
+    <script src="https://vjs.zencdn.net/7.6.0/video.js"></script>
+  </body>
 </html>
