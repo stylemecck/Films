@@ -88,7 +88,7 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Movie</a>
+            <a href="./movie.html" class="navbar-link">Movie</a>
           </li>
 
           <li>
@@ -145,22 +145,103 @@
   </header>
 <!-- video player-->
 <br>
-    <div class="player">
-      <h2>HALO 2022 </h2> <br>
-      <video
-        id="city-video"
-        class="video-js vjs-theme-city"
-        controls
-        preload="auto"
-        poster="https://i.ytimg.com/vi/qZId59qml_4/mqdefault.jpg"
-        data-setup='{ "fluid": true }'
-      >
-        <source
-          src="./video/lalg.mp4"
-          type="video/mp4"
-        />
-      </video>
+
+    <section class="movie-detail">
+    <div class="container">
+
+      <figure class="movie-detail-banner">
+
+        <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/09/14/9d981440faaacfd4f9a0589c4c9310d21663136052683354_original.jpg" alt="Free guy movie poster">
+
+        <button class="play-btn" onclick="window.location.href = './video/lalg.mp4';">
+        
+          <ion-icon name="play-circle-outline"></ion-icon>
+      
+        </button>
+
+      </figure>
+
+  <div class="movie-detail-content">
+
+    <p class="detail-subtitle">New Song</p>
+
+    <h1 class="h1 detail-title">
+      Lal <strong>Gaghra</strong>
+    </h1>
+
+    <div class="meta-wrapper">
+
+      <div class="badge-wrapper">
+        <div class="badge badge-fill">PG 13</div>
+
+        <div class="badge badge-outline">HD</div>
+      </div>
+
+      <div class="ganre-wrapper">
+        <a href="#">Comedy,</a>
+
+        <a href="#">Action,</a>
+
+        <a href="#">Adventure,</a>
+
+        <a href="#">Science Fiction</a>
+      </div>
+
+      <div class="date-time">
+
+        <div>
+          <ion-icon name="calendar-outline"></ion-icon>
+
+          <time datetime="2021">2021</time>
+        </div>
+
+        <div>
+          <ion-icon name="time-outline"></ion-icon>
+
+          <time datetime="PT115M">115 min</time>
+        </div>
+
+      </div>
+
     </div>
+
+    <p class="storyline">
+      A bank teller called Guy realizes he is a background character in an open world video game called Free
+      City that will
+      soon go offline.
+    </p>
+
+    <div class="details-actions">
+
+      <button class="share">
+        <ion-icon name="share-social"></ion-icon>
+
+        <span>Share</span>
+      </button>
+
+      <div class="title-wrapper">
+        <p class="title">Prime Video</p>
+
+        <p class="text">Streaming Channels</p>
+      </div>
+
+      <button  class="btn btn-primary" onclick="window.location.href = './video/lalg.mp4';">
+        <ion-icon name="play"></ion-icon>
+       
+        <span>Watch Now</span>
+      </button>
+
+    </div>
+
+    <a href="./video/lalg.mp4" download class="download-btn">
+      <span>Download</span>
+
+      <ion-icon name="download-outline"></ion-icon>
+    </a>
+
+  </div>
+
+</div>
 
 
      <!-- 
